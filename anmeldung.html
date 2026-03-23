@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anmeldung – Laufkultour Chemnitz 2026</title>
+  <meta name="description" content="Jetzt für den Laufkultour Chemnitz 2026 anmelden: Bambini-Lauf, 10 km oder Halbmarathon." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">🏃 Lauf<span>kultour</span></a>
+    <button class="hamburger" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="anmeldung.html" class="active">Anmeldung</a></li>
+      <li><a href="sponsoren.html">Sponsoren</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <h1>🏅 Jetzt anmelden</h1>
+    <p>Sichere dir deinen Startplatz für den 27. September 2026 in Chemnitz.</p>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb container">
+    <a href="index.html">Startseite</a> &rsaquo; Anmeldung
+  </div>
+
+  <!-- Info Strip -->
+  <section class="section section-alt" style="padding:2.5rem 1.5rem;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.5rem; text-align:center;">
+        <div>
+          <div style="font-size:2rem;">🧒</div>
+          <strong>Bambini-Lauf</strong>
+          <p style="color:var(--gray);font-size:.9rem;">~400 m · kostenlos · 4–8 Jahre</p>
+        </div>
+        <div>
+          <div style="font-size:2rem;">🏃</div>
+          <strong>10-km-Lauf</strong>
+          <p style="color:var(--gray);font-size:.9rem;">10 km · 12 € · ab 16 Jahre</p>
+        </div>
+        <div>
+          <div style="font-size:2rem;">🥇</div>
+          <strong>Halbmarathon</strong>
+          <p style="color:var(--gray);font-size:.9rem;">21,0975 km · 18 € · ab 18 Jahre</p>
+        </div>
+        <div>
+          <div style="font-size:2rem;">⏰</div>
+          <strong>Frühbucherpreis</strong>
+          <p style="color:var(--gray);font-size:.9rem;">bis 31. März 2026 · –20 %</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Anmeldeformular</h2>
+        <div class="divider"></div>
+        <p>Bitte alle Felder vollständig ausfüllen.</p>
+      </div>
+
+      <div class="form-card">
+        <form data-form="anmeldung" novalidate>
+
+          <h3 style="margin-bottom:1.2rem; color:var(--primary); font-size:1.1rem;">Persönliche Daten</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vorname">Vorname *</label>
+              <input type="text" id="vorname" name="vorname" placeholder="Max" required />
+            </div>
+            <div class="form-group">
+              <label for="nachname">Nachname *</label>
+              <input type="text" id="nachname" name="nachname" placeholder="Mustermann" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="geburtsdatum">Geburtsdatum *</label>
+              <input type="date" id="geburtsdatum" name="geburtsdatum" required />
+            </div>
+            <div class="form-group">
+              <label for="geschlecht">Geschlecht *</label>
+              <select id="geschlecht" name="geschlecht" required>
+                <option value="">Bitte wählen</option>
+                <option value="m">Männlich</option>
+                <option value="w">Weiblich</option>
+                <option value="d">Divers</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse *</label>
+            <input type="email" id="email" name="email" placeholder="max@beispiel.de" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+49 171 1234567" />
+            </div>
+            <div class="form-group">
+              <label for="nationalitaet">Nationalität</label>
+              <input type="text" id="nationalitaet" name="nationalitaet" placeholder="Deutsch" />
+            </div>
+          </div>
+
+          <hr style="margin:1.5rem 0; border:none; border-top:1px solid #e9ecef;" />
+          <h3 style="margin-bottom:1.2rem; color:var(--primary); font-size:1.1rem;">Startplatz</h3>
+
+          <div class="form-group">
+            <label for="lauf">Laufkategorie *</label>
+            <select id="lauf" name="lauf" required>
+              <option value="">Bitte wählen</option>
+              <option value="bambini">Bambini-Lauf (~400 m) – kostenlos</option>
+              <option value="10km">10-km-Lauf – 12 €</option>
+              <option value="halbmarathon">Halbmarathon (21,0975 km) – 18 €</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="startnummer-wunsch">Wunsch-Startnummer <span style="color:var(--gray);font-weight:400;">(optional, vorbehaltlich Verfügbarkeit)</span></label>
+            <input type="number" id="startnummer-wunsch" name="startnummer" placeholder="z.B. 42" min="1" max="9999" />
+          </div>
+
+          <div class="form-group">
+            <label for="tshirt">T-Shirt-Größe</label>
+            <select id="tshirt" name="tshirt">
+              <option value="">Kein T-Shirt</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>
+
+          <hr style="margin:1.5rem 0; border:none; border-top:1px solid #e9ecef;" />
+          <h3 style="margin-bottom:1.2rem; color:var(--primary); font-size:1.1rem;">Notfallkontakt</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="notfall-name">Name *</label>
+              <input type="text" id="notfall-name" name="notfall_name" placeholder="Erika Mustermann" required />
+            </div>
+            <div class="form-group">
+              <label for="notfall-telefon">Telefon *</label>
+              <input type="tel" id="notfall-telefon" name="notfall_telefon" placeholder="+49 171 9876543" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="gesundheit">Gesundheitliche Hinweise <span style="color:var(--gray);font-weight:400;">(optional)</span></label>
+            <textarea id="gesundheit" name="gesundheit" placeholder="z.B. Allergien, relevante Vorerkrankungen …"></textarea>
+          </div>
+
+          <hr style="margin:1.5rem 0; border:none; border-top:1px solid #e9ecef;" />
+
+          <div class="form-group">
+            <label class="form-check">
+              <input type="checkbox" name="agb" required />
+              Ich akzeptiere die <a href="impressum.html" style="color:var(--primary);">Teilnahmebedingungen</a> und bestätige, dass meine Angaben korrekt sind. *
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-check">
+              <input type="checkbox" name="datenschutz" required />
+              Ich habe die <a href="impressum.html#datenschutz" style="color:var(--primary);">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-check">
+              <input type="checkbox" name="fotos" />
+              Ich erkläre mich einverstanden, dass Fotos und Videos von mir im Rahmen des Events gemacht und veröffentlicht werden dürfen.
+            </label>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">✅ Verbindlich anmelden</button>
+          </div>
+
+          <div class="success-msg">
+            🎉 Deine Anmeldung wurde erfolgreich übermittelt! Wir senden dir eine Bestätigungs-E-Mail.
+          </div>
+
+        </form>
+      </div>
+
+      <p style="text-align:center; margin-top:1.5rem; color:var(--gray); font-size:.9rem;">
+        * Pflichtfelder · Fragen? <a href="kontakt.html" style="color:var(--primary);">Kontaktiere uns</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>🏃 Laufkultour Chemnitz</h4>
+        <p>Laufevent am 27. September 2026 in der Innenstadt Chemnitz.</p>
+        <p style="margin-top:.6rem;">kontakt@laufkultour-chemnitz.de</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="anmeldung.html">Anmeldung</a></li>
+          <li><a href="sponsoren.html">Sponsoren</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/laufkultour_chemnitz/" target="_blank" rel="noopener">📸 Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Laufkultour Chemnitz e.V. · Alle Rechte vorbehalten.</span>
+      <a href="impressum.html">Impressum &amp; Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* Pre-select race category from URL param */
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var lauf   = params.get('lauf');
+      if (lauf) {
+        var sel = document.getElementById('lauf');
+        if (sel) sel.value = lauf;
+      }
+    })();
+  </script>
+</body>
+</html>
